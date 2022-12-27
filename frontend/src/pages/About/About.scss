@@ -1,0 +1,82 @@
+@import '../../styles/scss/mixins';
+@import '../../styles/scss/_variables';
+
+.about-us-page {
+    .about-portfolio {
+        background-color: var(--container-color);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 20.6px;
+        margin-top: 40px;
+        padding: 60px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 70px;
+        .tech {
+            display: flex;
+            justify-content: space-between;
+            .tech-container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .tech-title {
+                    font-size: 20px;
+                    font-weight: 800;
+                    color:$hover_color;
+                }
+                .tech-name {
+                    font-size: 18px;
+                    list-style:square;
+                    font-weight: 600;
+                    opacity: 0.7;
+                }
+            }
+            .divider{
+                width: 4px;
+                background-color: $hover_color;
+                height: 100px;
+                align-self: center;
+            }
+        }
+        .about-portfolio-header {
+            font-size: 25px;
+            color:$hover_color;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+    }
+
+    .about-me {
+        .about-me-header {
+            align-self: flex-start;
+        }
+        .description {
+            font-size: 18px;
+            list-style:square;
+                    font-weight: 600;
+                    opacity: 0.7;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about-us-page {
+        .about-portfolio {
+            padding: 40px;
+            .about-portfolio-header {
+                font-size: 23px;
+            }
+            .tech {
+                flex-direction: column;
+                gap: 50px;
+                .tech-container {
+
+                }
+                .divider {
+                    display: none;
+                }
+            }
+        }
+    }
+}

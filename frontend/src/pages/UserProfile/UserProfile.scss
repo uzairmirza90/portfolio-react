@@ -1,0 +1,35 @@
+@import "../../styles/scss/mixins";
+
+.profile-container {
+    margin-top: 50px;
+
+    .profile-content-container {
+        @include flexJustifyAlign(row);
+        gap: 20px;
+        flex-wrap: wrap;
+        .welcome {
+            text-align: center;
+        }
+    }
+    .gifs {
+        @include flexJustifyAlign(row);
+        margin-top: 50px;
+        .gif {
+            height: 400px;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .profile-container {
+        .profile-content-container {
+            .welcome {
+                font-size: 30px;
+            }
+        }
+        .gifs {
+            margin-top: 10px;
+        }
+    }
+}
