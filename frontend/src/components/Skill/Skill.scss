@@ -1,0 +1,26 @@
+@import "../../styles/scss/mixins";
+@import "../../styles/scss/variables";
+
+.skill {
+    @include flexJustifyAlign(row);
+    background-color: var(--container-color);
+    width: 270px;
+    padding: 13px;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 7.6px;
+    .skill-image {
+        width: 45px;
+        border-radius: 20px;
+    }
+
+    .text-and-rating {
+        @include flex(column);
+        gap: 12px;
+        .skill-text {
+            font-size: 17px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+    }
+}
