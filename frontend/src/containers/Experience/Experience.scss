@@ -1,0 +1,39 @@
+@import '../../styles/scss/variables';
+@import '../../styles//scss/mixins';
+
+.experience {
+   .experience-card {
+        background-color: var(--container-color);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 20.6px;
+        margin-top: 40px;
+        padding: 90px;
+        border-radius: 20px;
+        @include flexJustifyAlign(row);
+        gap: 50px;
+        .years {
+            font-size: 27px;
+        }
+        .hover-color {
+            color: $hover_color;
+        }
+        .mern-image {
+            width: 300px;
+            border-radius: 20px;
+          
+        }
+   }
+}
+
+
+@media  only screen and (max-width: 900px) {
+    .experience {
+        .experience-card {
+            @include flexJustifyAlign(column);
+            gap: 30px;
+            padding: 40px;
+            .mern-image {
+                width: 80%;
+            }
+        }
+    }
+}

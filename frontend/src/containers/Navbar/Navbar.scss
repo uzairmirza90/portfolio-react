@@ -1,0 +1,31 @@
+@import '../../styles/scss/mixins.scss';
+@import '../../styles/scss//variables';
+
+.navbar {
+    @include flexAlign(row);
+    justify-content: space-between;
+padding-left: 40px;
+padding-right: 40px;
+height: 60px;
+    .title-container {
+        @include flexJustifyAlign(row);
+        gap: 10px;
+        cursor: pointer;
+    }
+    
+    .nav-items {
+        @include flexJustifyAlign(row);
+        gap: 40px;
+    }
+}
+
+
+@media  only screen and (max-width: 920px) {
+    .navbar {
+        padding-left: 20px;
+
+        .nav-items {
+            display: none;
+        }
+    } 
+}

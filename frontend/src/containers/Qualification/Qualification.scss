@@ -1,0 +1,33 @@
+@import '../../styles/scss/variables';
+@import '../../styles//scss/mixins';
+
+.qualification {
+    .qualification-card {
+        padding: 20px;
+        margin-top: 40px;
+        background-color: $hover_color;
+        width: '100%';
+        margin-bottom: 50px;
+        @include flexJustifyAlign(row);
+        gap: 100px;
+        border-radius: 20px;
+        box-shadow: rgba(60, 131, 105, 1.5) 1.95px 1.95px 8.6px;
+        .convo-image {
+            font-size: 130px;
+        }
+        .computer-science {
+            color: rgb(33, 54, 33)
+        }
+    }
+}
+
+@media  only screen and (max-width: 900px) {
+    .qualification {
+        .qualification-card {
+            gap: 30px;
+            .convo-image {
+                font-size: 100px;
+            }
+        }
+    }
+}

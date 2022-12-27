@@ -1,0 +1,28 @@
+@import '../../styles/scss/variables';
+@import '../../styles//scss/mixins';
+
+.contact-me-container {
+    margin-top: 70px;
+    .contact-me {
+        background-color: var(--container-color);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 20.6px;
+        margin-top: 40px;
+        padding: 10%;
+        border-radius: 20px;
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .contact-content-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            cursor: pointer;
+            .contact-image {
+                width: 50px;
+            }
+          
+        }
+    }
+}
